@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+p {
+  font-weight: 400;
+  color: hsl(229, 6%, 66%);
+}
+
+h2 {
+  font-weight: 600;
+}
+
+.top {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 500px;
+}
+
+.top h1 {
+  font-weight: 200;
+}
+
+.top h1,
+h2 {
+  font-size: 36px;
+}
+
+.card {
+  min-width: 350px;
+  min-height: 250px;
+  max-width: 350px;
+  max-height: 250px;
+  padding: 25px;
+  box-shadow: 0px 15px 10px hsl(229, 6%, 66%);
+  border-top: 5px solid black;
+  border-radius: 5px;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.card img {
+  float: right;
+  position: relative;
+  top: 45px;
+}
+
+.super {
+  order: 1;
+  border-color: hsl(180, 62%, 55%);
+}
+
+.calcu {
+  order: 3;
+  border-color: hsl(212, 86%, 64%);
+}
+
+.center {
+  order: 2;
+  margin: 0px 30px 0 30px;
+}
+
+.team {
+  margin-bottom: 30px;
+  border-color: hsl(0, 78%, 62%);
+}
+
+.karma {
+  border-color: hsl(34, 97%, 64%);
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .top h1,
+  h2 {
+    font-size: 27px;
+  }
+
+  .top {
+    width: 350px;
+  }
+
+  .quebra {
+    display: none;
+  }
+
+  .super,
+  .center {
+    margin-bottom: 30px;
+  }
+}
